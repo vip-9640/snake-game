@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="game-layout">
+      <header class="game-header">
+        <h1>Snake</h1>
+        <p>Play on desktop (arrow keys/WASD) or mobile (swipe/buttons).</p>
+      </header>
+
+      <section class="stats" aria-label="Game stats">
+        <div><span>Score:</span> <strong id="score">0</strong></div>
+        <div><span>High score:</span> <strong id="highScore">0</strong></div>
+        <div><span>Best length:</span> <strong id="length">3</strong></div>
+      </section>
+
+      <canvas id="gameCanvas" width="360" height="360" aria-label="Snake game board"></canvas>
+
+      <section class="actions" aria-label="Game actions">
+        <button id="pauseButton" class="action-btn" type="button">Pause</button>
+        <button id="restartButton" class="action-btn" type="button">Restart</button>
+      </section>
+
+      <section class="controls" aria-label="Touch controls">
+        <button data-direction="up" aria-label="Move up" type="button">⬆</button>
+        <div class="middle-row">
+          <button data-direction="left" aria-label="Move left" type="button">⬅</button>
+          <button data-direction="down" aria-label="Move down" type="button">⬇</button>
+          <button data-direction="right" aria-label="Move right" type="button">➡</button>
+        </div>
+      </section>
+
+      <p id="message" class="message" role="status" aria-live="polite"></p>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

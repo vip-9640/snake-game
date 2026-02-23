@@ -21,22 +21,28 @@ body {
 
 .game-header h1 {
   margin: 0;
-}
+  margin-top: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;}
 
 .game-header p {
   margin: 4px 0 0;
   color: #ccd3ff;
   font-size: 0.95rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .stats {
   display: flex;
   justify-content: space-between;
   gap: 12px;
-  background: rgba(255, 255, 255, 0.07);
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(4, 33, 74, 0.912);
+  border: 3px solid rgba(255, 255, 255, 0.927);
   border-radius: 10px;
   padding: 10px 14px;
+  width: 50%;
+  justify-self: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-top: 20px;
 }
 
 canvas {
@@ -45,19 +51,20 @@ canvas {
   aspect-ratio: 1 / 1;
   background: #0f1222;
   border-radius: 12px;
-  border: 2px solid #5f73ff;
+  border: 5px solid #ffffff;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+  margin-top: 15px;
 }
 
 .controls {
   display: grid;
   justify-items: center;
-  gap: 8px;
+  gap: 12px;
 }
 
 .middle-row {
   display: flex;
-  gap: 8px;
+  gap: 12px;
 }
 
 .controls button,
@@ -77,6 +84,8 @@ canvas {
   justify-self: center;
   font-size: 1rem;
   height: 44px;
+  background: #167814;
+  text-transform: uppercase;
 }
 
 .controls button:active,
@@ -87,8 +96,11 @@ canvas {
 .message {
   min-height: 1.2em;
   margin: 0;
-  color: #ffcb86;
+  color: #ffb964;
   font-weight: 600;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 @media (min-width: 768px) {
